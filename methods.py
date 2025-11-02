@@ -3,13 +3,6 @@ import string
 def caesar_rotate(text, key):
     decrypted = []
     for char in text:
-        if char == ' ' and char not in string.ascii_letters:
-            decrypted.append(char)
-
-        # Skipping non-alphabet chars
-        # if char not in string.ascii_letters:
-        #     decrypted.append(char)
-
         if char.islower():
             lower_char_index = string.ascii_lowercase.index(char)
             decrypted.append(string.ascii_lowercase[(lower_char_index + key) % 26])
@@ -27,13 +20,6 @@ def caesar_bruteforce(ciphertext):
     for shift in range(1, 26):
         decrypted = []
         for char in ciphertext:
-            if char == ' ' and char not in string.ascii_letters:
-                decrypted.append(char)
-
-            # Skipping non-alphabet chars
-            # if char not in string.ascii_letters:
-            #     decrypted.append(char)
-
             if char.islower():
                 lower_char_index = string.ascii_lowercase.index(char)
                 decrypted.append(string.ascii_lowercase[(lower_char_index + shift) % 26])
