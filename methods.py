@@ -8,7 +8,7 @@ def caesar_rotate(text, key):
 
         # Skipping non-alphabet chars
         if char not in string.ascii_letters:
-            continue
+            decrypted.append(char)
 
         if char.islower():
             lower_char_index = string.ascii_lowercase.index(char)
@@ -32,7 +32,7 @@ def caesar_bruteforce(ciphertext):
 
             # Skipping non-alphabet chars
             if char not in string.ascii_letters:
-                continue
+                decrypted.append(char)
 
             if char.islower():
                 lower_char_index = string.ascii_lowercase.index(char)
