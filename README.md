@@ -40,7 +40,7 @@ python caesar.py --bruteforce "Khoor Zruog"
 
 Encrypt direct text input with a shift of 5:
 ```sh
-python caesar.py --key 5 "Hello World"
+python caesar.py --key 3 "Hello World"
 ```
 
 ## Files

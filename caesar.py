@@ -27,8 +27,8 @@ def main():
     )
 
     parser.add_argument("input", nargs='?', help="text or file")
-    parser.add_argument("--key", type=int, help="shift value for encryption/decryption")
-    parser.add_argument("--bruteforce", action="store_true", help="bruteforce decryption")
+    parser.add_argument("-k", "--key", type=int, help="shift value for encryption/decryption")
+    parser.add_argument("-b", "--bruteforce", action="store_true", help="bruteforce decryption")
 
     args = parser.parse_args()
 
